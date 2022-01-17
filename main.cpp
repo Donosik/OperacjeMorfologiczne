@@ -1,7 +1,6 @@
-#include <iostream>
 #include "AppManager.h"
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
     try
     {
@@ -12,6 +11,5 @@ int main(int argc, char **argv)
         std::cout<<"Error:"<<std::endl;
         std::cout<<ex.what()<<std::endl;
     }
-
     return 0;
 }

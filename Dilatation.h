@@ -3,9 +3,12 @@
 
 #include "ImageOperator.h"
 
+/// Klasa wykonująca operację morfologiczną Dylatacja
 class Dilatation : public ImageOperator
 {
-
+public:
+    /// Funkcja obliczająca nowe dane na podstawie tablicy danych
+    void Calculate() override;
 };
 
 

@@ -5,12 +5,21 @@
 #include <vector>
 #include <sstream>
 
+/// Klasa odpowiadająca za wczytanie danych z podanego pliku
 class InputImage
 {
+    /// Nazwa pliku,z którego mają być wczytywane dane
     std::string fileName;
+    /// Zmienna strumienia plików
     std::ifstream file;
 public:
-    InputImage(std::string name);
+    /// Konstruktor klasy
+    InputImage();
+    /// Funkcja ustawiająca nazwę pliku z podanego argumentu
+    /// \param name Nazwa pliku do wczytania
+    void SetFile(std::string name);
+    /// Funkcja wczytująca dane z pliku i zwracająca je jako dane
+    /// \return Zwraca 2-wymiarową tablice danych
     std::vector<std::vector<int>> LoadFromFile();
 };
 
